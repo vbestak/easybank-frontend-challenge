@@ -30,8 +30,8 @@ body{
 
 button, .button{
     text-decoration: none;
-    padding: 14px 32px;
-    border-radius: 50px;
+    padding: 0.875rem 2rem;
+    border-radius: 3.125rem;
     background: linear-gradient(to right, $limeGreen, $rightCyan);
     color: $white;
     font-weight: 300;
