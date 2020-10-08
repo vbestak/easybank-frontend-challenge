@@ -1,0 +1,9 @@
+@keyframes mobile_menu_in {
+    from {left: calc(-100% + 3rem);}
+    to {left: 0}
+}
+
+@keyframes mobile_menu_out {
+    from {left: 0; visibility: visible;}
+    to {left: calc(-100% + 3rem); visibility: hidden;}
+}

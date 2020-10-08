@@ -34,12 +34,13 @@
     }
 
     .header__overlay {
-        visibility: visible;
+      visibility: visible;
       opacity: 0.7;
     }
 
-    .header__mobile-nav{
-        visibility: visible;
+    .header__mobile-nav {
+      visibility: visible;
+      animation: mobile_menu_in .8s;
     }
   }
 

@@ -1,3 +1,43 @@
+@-webkit-keyframes mobile_menu_in {
+  from {
+    left: calc(-100% + 3rem);
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes mobile_menu_in {
+  from {
+    left: calc(-100% + 3rem);
+  }
+  to {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes mobile_menu_out {
+  from {
+    left: 0;
+    visibility: visible;
+  }
+  to {
+    left: calc(-100% + 3rem);
+    visibility: hidden;
+  }
+}
+
+@keyframes mobile_menu_out {
+  from {
+    left: 0;
+    visibility: visible;
+  }
+  to {
+    left: calc(-100% + 3rem);
+    visibility: hidden;
+  }
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -119,6 +159,8 @@ button:hover, .button:hover {
 
 .header.open .header__mobile-nav {
   visibility: visible;
+  -webkit-animation: mobile_menu_in .8s;
+          animation: mobile_menu_in .8s;
 }
 
 .header__overlay {
