@@ -1,16 +1,35 @@
 .header{
 
+    
+
     &__hamburger{
         cursor: pointer;
         
+
         > span{
             width: 2rem;
             height: 0.1875rem;
             display: block;
             background-color: $darkBlue;
+            transform-origin:   0.25rem 0.0625rem;
+            transition: .3s all ease-in-out;
 
             &:not(:last-child){
                 margin-bottom: 0.3438rem;
+            }
+        }
+
+        &.open{
+            > span:first-child{
+                transform: rotate(45deg);
+            }
+
+            > span:nth-child(2){
+                opacity: 0;
+            }
+
+            > span:last-child{
+                transform: rotate(-45deg);
             }
         }
     }

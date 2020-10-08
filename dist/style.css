@@ -75,10 +75,26 @@ button:hover, .button:hover {
   height: 0.1875rem;
   display: block;
   background-color: #2d314d;
+  -webkit-transform-origin: 0.1875rem 0.0625rem;
+          transform-origin: 0.1875rem 0.0625rem;
 }
 
 .header__hamburger > span:not(:last-child) {
   margin-bottom: 0.3438rem;
+}
+
+.header__hamburger.open > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header__hamburger.open > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__hamburger.open > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .header__logo {
