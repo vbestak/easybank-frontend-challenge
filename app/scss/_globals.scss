@@ -18,8 +18,16 @@ body{
     display: flex;
     flex-direction: row;
 
+    &--fd--c{
+        flex-direction: column;
+    }
+
     &--jc--sb{
         justify-content: space-between;
+    }
+
+    &--jc--c{
+        justify-content: center;
     }
 
     &--ai--c{

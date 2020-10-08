@@ -26,10 +26,23 @@ body {
           flex-direction: row;
 }
 
+.flex--fd--c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .flex--jc--sb {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.flex--jc--c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .flex--ai--c {
@@ -66,6 +79,25 @@ button:hover, .button:hover {
   }
 }
 
+.header__mobile-nav {
+  visibility: hidden;
+  position: absolute;
+  background-color: #fff;
+  width: calc(100% - 3rem);
+  margin: 1.5rem 1.5rem;
+  border-radius: 0.3125rem;
+  padding: 0.5rem 0;
+}
+
+.header__mobile-nav a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.625rem;
+  color: #2d314d;
+}
+
 .header.open .header__hamburger > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -81,10 +113,16 @@ button:hover, .button:hover {
 }
 
 .header.open .header__overlay {
+  visibility: visible;
   opacity: 0.7;
 }
 
+.header.open .header__mobile-nav {
+  visibility: visible;
+}
+
 .header__overlay {
+  visibility: hidden;
   opacity: 0;
   position: fixed;
   top: 3.75rem;
