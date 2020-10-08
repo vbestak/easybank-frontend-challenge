@@ -1,9 +1,10 @@
-const hamburgerMenu = document.querySelector(".header__hamburger");
+const header = document.querySelector(".header");
+const hamburger = document.querySelector(".header__hamburger");
 
-hamburgerMenu.addEventListener("click", ()=>{
-    if(hamburgerMenu.classList.contains("open")){
-        hamburgerMenu.classList.remove("open")
+hamburger.addEventListener("click", ()=>{
+    if(header.classList.contains("open")){
+        header.classList.remove("open")
     }else{
-        hamburgerMenu.classList.add("open") 
+        header.classList.add("open") 
     }
 });
