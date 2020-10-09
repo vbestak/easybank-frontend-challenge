@@ -1,0 +1,17 @@
+.why-section{
+    h2{
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    &__whys{
+        margin-top: 4.375rem;
+        &__why{
+            padding-right: 1.5625rem;
+        
+            h3{
+                font-weight: 400;
+            }
+        }
+    }
+}
