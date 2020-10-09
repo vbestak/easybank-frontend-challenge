@@ -21,10 +21,10 @@
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="flex flex--ai--c flex--jc--sb">
-        <a href="#" class="header__logo" >
-          <img src="images/logo.svg" alt="logo"/>
+    <header class="header container">
+      <nav class="flex flex--ai--c flex--jc--sb container--mx-width">
+        <a href="#" class="header__logo">
+          <img src="images/logo.svg" alt="logo" />
         </a>
 
         <div class="header__links hide-for-mobile">
@@ -43,7 +43,9 @@
         <a href="#" class="button hide-for-mobile">Request Invite</a>
       </nav>
       <div class="header__overlay hide-for-desktop"></div>
-      <div class="header__mobile-nav hide-for-desktop flex flex--ai--c flex--jc--c flex--fd--c">
+      <div
+        class="header__mobile-nav hide-for-desktop flex flex--ai--c flex--jc--c flex--fd--c"
+      >
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
@@ -52,9 +54,26 @@
       </div>
     </header>
 
-    Home About Contact Blog Careers Request Invite Next generation digital
-    banking Take your financial life online. Your Easybank account will be a
-    one-stop-shop for spending, saving, budgeting, investing, and much more.
+    <div class="intro-section  container container--lightgray">
+      <div class="flex container--mx-width">
+        <div class="intro-section__info flex--2">
+          <h1>Next generation digital banking</h1>
+          <p>
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+          <!-- REMOVE// ADD CSS -->
+          <br>
+          <a href="#" class="button">Request invite</a>
+        </div>
+        <div class="intro-section__picture flex--3">
+          <!-- <img src="images/image-mockups.png" alt=""> -->
+        </div>
+      </div>
+      
+    </div>
+
     Request Invite Why choose Easybank? We leverage Open Banking to turn your
     bank account into your financial hub. Control your finances like never
     before. Online Banking Our modern web and mobile applications allow you to

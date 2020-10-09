@@ -1,4 +1,8 @@
 .header {
+  position: relative;
+  background-color: $white;
+  z-index: 5;
+
   &__mobile-nav {
     visibility: hidden;
     position: absolute;

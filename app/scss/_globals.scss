@@ -18,6 +18,14 @@ body{
     display: flex;
     flex-direction: row;
 
+    &--2{
+        flex: 2;
+    }
+
+    &--3{
+        flex: 3;
+    }
+
     &--fd--c{
         flex-direction: column;
     }
@@ -34,6 +42,27 @@ body{
         align-items: center;
     }
 
+}
+
+.container{
+    
+
+    &--mx-width{
+        max-width: 87.5rem;
+        margin: 0 auto;
+    }
+
+    &--padding{
+        padding: 6.25rem 10rem;
+    }
+    
+    &--lightgray{
+        background-color: $veryLightGray;
+    }
+
+    &--lightgreyblue{
+        background-color: $lightGrayishBlue;
+    }
 }
 
 button, .button{
