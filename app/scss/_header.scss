@@ -3,6 +3,10 @@
   background-color: $white;
   z-index: 5;
 
+  @include breakpoint-down(large){
+    padding: 0 1.25rem;
+  }
+
   &__mobile-nav {
     visibility: hidden;
     position: absolute;

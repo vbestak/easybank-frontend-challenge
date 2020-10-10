@@ -1,4 +1,11 @@
 .why-section{
+    @include breakpoint-down(small){
+        text-align: center;
+        &__whys{
+            flex-direction: column;
+        }
+    }
+    
     h2{
         font-weight: 500;
         font-size: 2rem;
@@ -6,6 +13,7 @@
 
     &__whys{
         margin-top: 4.375rem;
+
         &__why{
             padding-right: 1.5625rem;
         
