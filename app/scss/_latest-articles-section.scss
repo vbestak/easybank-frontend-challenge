@@ -3,9 +3,23 @@
         display: inline-block;
         font-weight: 400;
         font-size: 1.875rem;
+        
+        @include breakpoint-down(medium){
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__articles{
+        @include breakpoint-down(medium){
+            flex-direction: column;
+            align-items: center;
+
+            &__article:not(:last-child){
+                margin-bottom: 2.125rem;
+            }
+        }
+
         &__article{
             border-radius: 10px 10px 0 0;
             background-color: $white;

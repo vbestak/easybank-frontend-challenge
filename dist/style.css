@@ -435,6 +435,28 @@ button:hover, .button:hover {
   font-size: 1.875rem;
 }
 
+@media (max-width: 63.9375em) {
+  .latest-articles-section h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .latest-articles-section__articles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .latest-articles-section__articles__article:not(:last-child) {
+    margin-bottom: 2.125rem;
+  }
+}
+
 .latest-articles-section__articles__article {
   border-radius: 10px 10px 0 0;
   background-color: white;
