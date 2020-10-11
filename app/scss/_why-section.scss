@@ -1,5 +1,5 @@
 .why-section{
-    @include breakpoint-down(small){
+    @include breakpoint-down(medium){
         text-align: center;
         &__whys{
             flex-direction: column;
@@ -14,8 +14,16 @@
     &__whys{
         margin-top: 4.375rem;
 
+        @include breakpoint-down(medium){
+            &__why:not(:last-child){
+                margin-bottom: 4rem;
+            }
+        }
+
         &__why{
-            padding-right: 1.5625rem;
+            @include breakpoint-up(large){
+                padding-right: 1.5625rem;
+            }
         
             h3{
                 font-weight: 400;

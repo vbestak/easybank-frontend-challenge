@@ -16,6 +16,7 @@
     @include breakpoint-down(medium) {
       text-align: center;
       order: 2;
+      padding-bottom: 3rem;
     }
 
     h1 {

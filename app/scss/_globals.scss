@@ -50,6 +50,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .container{
+
+    @include breakpoint-down(medium){
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
     
 
     &--mx-width{
@@ -58,7 +63,8 @@ h1, h2, h3, h4, h5, h6{
     }
 
     &--padding-tb{
-        padding: 6.25rem;
+        padding-top: 6.25rem;
+        padding-bottom: 6.25rem;
     }
     
     &--lightgray{

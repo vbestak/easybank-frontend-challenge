@@ -1,18 +1,18 @@
 @-webkit-keyframes mobile_menu_in {
   from {
-    left: calc(-100% + 3rem);
+    left: -90%;
   }
   to {
-    left: 0;
+    left: 5%;
   }
 }
 
 @keyframes mobile_menu_in {
   from {
-    left: calc(-100% + 3rem);
+    left: -90%;
   }
   to {
-    left: 0;
+    left: 5%;
   }
 }
 
@@ -108,13 +108,21 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 
+@media (max-width: 63.9375em) {
+  .container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
 .container--mx-width {
   max-width: 75rem;
   margin: 0 auto;
 }
 
 .container--padding-tb {
-  padding: 6.25rem;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
 }
 
 .container--lightgray {
@@ -170,8 +178,10 @@ button:hover, .button:hover {
   visibility: hidden;
   position: absolute;
   background-color: #fff;
-  width: calc(100% - 3rem);
-  margin: 1.5rem 1.5rem;
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  margin: 1.5rem 0;
   border-radius: 0.3125rem;
   padding: 0.5rem 0;
 }
@@ -313,6 +323,7 @@ button:hover, .button:hover {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    padding-bottom: 3rem;
   }
 }
 
@@ -406,7 +417,7 @@ button:hover, .button:hover {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: 63.9375em) {
   .why-section {
     text-align: center;
   }
@@ -427,8 +438,16 @@ button:hover, .button:hover {
   margin-top: 4.375rem;
 }
 
-.why-section__whys__why {
-  padding-right: 1.5625rem;
+@media (max-width: 63.9375em) {
+  .why-section__whys__why:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .why-section__whys__why {
+    padding-right: 1.5625rem;
+  }
 }
 
 .why-section__whys__why h3 {
