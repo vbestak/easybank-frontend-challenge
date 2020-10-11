@@ -115,7 +115,7 @@ h6 {
           align-items: center;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 87.5em) {
   .container--padding-smallscreens {
     padding-right: 1rem;
     padding-left: 1rem;
