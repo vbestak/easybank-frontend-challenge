@@ -44,7 +44,9 @@ html {
           box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -52,12 +54,17 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Public sans', sans-serif;
+  font-family: "Public sans", sans-serif;
   line-height: 1.4;
   color: #9698a6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #2d314d;
 }
 
@@ -109,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 63.9375em) {
-  .container {
+  .container--padding-smallscreens {
     padding-right: 1rem;
     padding-left: 1rem;
   }
@@ -133,7 +140,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f3f4f6;
 }
 
-button, .button {
+button,
+.button {
   display: inline-block;
   text-decoration: none;
   padding: 0.875rem 2rem;
@@ -142,11 +150,12 @@ button, .button {
   background: linear-gradient(to right, #31d35c, #2bb7da);
   color: white;
   font-weight: 300;
-  -webkit-transition: .3s all ease-in-out;
-  transition: .3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
-button:hover, .button:hover {
+button:hover,
+.button:hover {
   opacity: 0.7;
 }
 
