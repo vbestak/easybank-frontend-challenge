@@ -41,7 +41,7 @@
     @include breakpoint-up(large) {
       flex: 3;
       &::before{
-        background-image: url("../../images/bg-intro-desktop.svg");    
+        background-image: url("/images/bg-intro-desktop.svg");    
         background-size: 78.125rem;
         background-position: -60px -17.1875rem;
       }
@@ -58,7 +58,7 @@
         height: 440px;
 
         &::before{
-          background-image: url("../../images/bg-intro-mobile.svg");
+          background-image: url("/images/bg-intro-mobile.svg");
           background-size: 100%;
           background-position: center center;
         }
@@ -75,7 +75,7 @@
       order: 1;
 
       &::before{
-        background-image: url("../../images/bg-intro-mobile.svg");
+        background-image: url("/images/bg-intro-mobile.svg");
         background-size: 100%;
         background-position: center center;
       }
@@ -100,7 +100,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url("../../images/image-mockups.png");
+      background-image: url("/images/image-mockups.png");
       background-repeat: no-repeat;
     }
   }
