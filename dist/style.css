@@ -320,6 +320,7 @@ button:hover,
     padding-top: 10.625rem;
     padding-bottom: 10.625rem;
     padding-right: 6.25rem;
+    padding-left: 2rem;
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
