@@ -26,6 +26,10 @@ h6 {
   color: $darkBlue;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .flex {
   display: flex;
   flex-direction: row;

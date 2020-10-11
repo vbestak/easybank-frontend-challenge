@@ -68,6 +68,10 @@ h6 {
   color: #2d314d;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
