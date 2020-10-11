@@ -368,7 +368,7 @@ button:hover,
             flex: 3;
   }
   .intro-section__picture::before {
-    background-image: url("../../images/bg-intro-desktop.svg");
+    background-image: url("images/bg-intro-desktop.svg");
     background-size: 78.125rem;
     background-position: -60px -17.1875rem;
   }
@@ -385,7 +385,7 @@ button:hover,
     height: 440px;
   }
   .intro-section__picture::before {
-    background-image: url("../../images/bg-intro-mobile.svg");
+    background-image: url("images/bg-intro-mobile.svg");
     background-size: 100%;
     background-position: center center;
   }
@@ -404,7 +404,7 @@ button:hover,
             order: 1;
   }
   .intro-section__picture::before {
-    background-image: url("../../images/bg-intro-mobile.svg");
+    background-image: url("images/bg-intro-mobile.svg");
     background-size: 100%;
     background-position: center center;
   }
@@ -427,7 +427,7 @@ button:hover,
 .intro-section__picture::after {
   content: "";
   position: absolute;
-  background-image: url("../../images/image-mockups.png");
+  background-image: url("images/image-mockups.png");
   background-repeat: no-repeat;
 }
 
