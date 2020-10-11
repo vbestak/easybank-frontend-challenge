@@ -327,11 +327,17 @@ button:hover, .button:hover {
       -ms-flex: 3;
           flex: 3;
   min-height: 17.5rem;
+  width: 100%;
+}
+
+@media (min-width: 75em) and (max-width: 1800px) {
+  .intro-section__picture::before, .intro-section__picture::after {
+    right: calc( (100vw - 1225px) / -2);
+  }
 }
 
 @media (min-width: 64em) {
   .intro-section__picture {
-    margin-right: -9.9375rem;
     -webkit-box-flex: 3;
         -ms-flex: 3;
             flex: 3;
@@ -339,11 +345,11 @@ button:hover, .button:hover {
   .intro-section__picture::before {
     background-image: url("../../images/bg-intro-desktop.svg");
     background-size: 78.125rem;
-    background-position: -3.125rem -17.1875rem;
+    background-position: -60px -17.1875rem;
   }
   .intro-section__picture::after {
     background-size: 45.9375rem;
-    background-position: 9.0625rem -7.5rem;
+    background-position: 2.8125rem -7.5rem;
     width: 100%;
     height: 120%;
   }
