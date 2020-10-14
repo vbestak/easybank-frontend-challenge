@@ -1,6 +1,6 @@
 @keyframes mobile_menu_in {
-    from {left: -90%}
-    to {left: 5%}
+    from {transform: translateX(-110%);}
+    to {transform: translateX(0);}
 }
 
 @keyframes mobile_menu_out {
