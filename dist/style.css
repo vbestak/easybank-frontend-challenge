@@ -1,18 +1,22 @@
 @-webkit-keyframes mobile_menu_in {
   from {
-    left: -90%;
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
   }
   to {
-    left: 5%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 @keyframes mobile_menu_in {
   from {
-    left: -90%;
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
   }
   to {
-    left: 5%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
